@@ -1,0 +1,42 @@
+
+nobetci
+
+flutter build apk --release
+cd build/app/outputs/flutter-apk/
+npx serve . -p 8000
+
+
+
+
+Daha küçük bir APK oluşturmak için, 
+sadece belirli bir mimariye odaklanabilirsiniz:
+
+flutter build apk --release --target-platform=android-arm64
+
+
+
+----------------------------------------------
+
+uygulamadaki aşağıdaki ilgili tüm alanları aşağıdaki gibi değiştirmeni istiyorum
+uygulamanın paket adı > com.murselnet.nobetci
+uygulamanın adı > nobetci
+
+
+Aşağıdaki değişklikleri yap.
+
+android/app/build.gradle dosyasında com.example.myapp
+myapp > com.murselnet.nobetci olarak değiştir
+
+nobetci > nobetci olarak değiştir
+android/app/src/main/AndroidManifest.xml dosyasında android:label="nobetci"
+
+
+
+Değişiklikleri yaptıktan bu komutları çalıştır:
+flutter clean
+flutter pub get
+flutter build apk
+
+https://claude.ai/chat/349a52a5-987d-43e3-8749-e61da9fb6167
+
+
