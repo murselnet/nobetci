@@ -1,1 +1,0 @@
-feat: Implement initial version of security camera app
